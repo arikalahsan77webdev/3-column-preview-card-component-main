@@ -1,0 +1,89 @@
+$Brightorange: hsl(31, 77%, 52%);
+$Darkcyan: hsl(184, 100%, 22%);
+$Verydarkcyan: hsl(179, 100%, 13%);
+$Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+$Verylightgraybackgroundheadingsbuttons: hsl(0, 0%, 95%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+justify-content: center;
+    align-items: center ;
+    font-family: "Lexend Deca", serif;
+    color: #fff;
+}
+.main{
+    display: flex;
+    margin-left: 200px;
+    height: 340px;
+}
+.child_box{
+    padding-bottom: 20px;
+    flex-basis: 28%;
+    padding: 20px;
+}
+.box1{
+    background-color: $Brightorange;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.box2{
+    background-color: $Darkcyan;
+}
+
+.box3{
+    background-color: $Verydarkcyan;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+h2{
+    text-transform: uppercase ;
+    padding: 10px;
+    font-size: 32px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+p{
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: $Transparentwhiteparagraphs;
+    user-select: none;
+}
+a{
+    padding: 11px 18px;
+    background-color: $Verylightgraybackgroundheadingsbuttons;
+    display: inline-block;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    top: 12px;
+    left: 10px;
+    font-weight: 400;
+    transition: 0.5s;
+    &:hover{
+        background: none;
+        border: 1px solid $Verylightgraybackgroundheadingsbuttons;
+        color: #fff;
+    }
+}
+.btn1{
+    color: $Brightorange;
+    
+}
+.btn2{
+    color: $Darkcyan;
+}
+.btn3{
+    color: $Verydarkcyan;
+}
